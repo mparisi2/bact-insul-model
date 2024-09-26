@@ -1,4 +1,5 @@
-
+% Finding a power rule function that fits the plot of bacteria death rate d 
+% vs maximum insulin produced m
 % 
 % plot(deathrate,amount_optimal,'+r'), hold on
 % p = polyfit(log(deathrate),log(amount_optimal),1); 
