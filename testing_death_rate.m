@@ -1,6 +1,7 @@
 % Mona Parisi
 % February 6, 2024
-% Creating figure using GM bacteria with insulin 
+% Test different values of bacteria death rate d to find the optimal value
+% which maximizes insulin production
 
 clc
 
