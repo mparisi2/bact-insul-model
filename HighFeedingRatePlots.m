@@ -1,6 +1,7 @@
 % Mona Parisi
 % February 6, 2024
 % Creating figure using GM bacteria with insulin 
+% Only plots High Feeding Rate data F3
 
 clc
 
