@@ -1,6 +1,10 @@
 % Mona Parisi
 % February 6, 2024
-% Creating figure using GM bacteria with insulin 
+% Creating figure using genetically modified (GM) bacteria with insulin 
+
+% Bacteria is genetically modified to resist the inihibitory effects on growth
+% that the presence of insulin causes in the system when cultivating 
+% insulin recombinant E. coli
 
 clc
 
@@ -71,14 +75,14 @@ hold off
 
 
 figure
-% Plot insulin values and error
+% Plot insulin values and error (F1 and F2 are commented out)
 % errorbar(time,insul1_values,insul1_err,'DisplayName','Insulin Data for F1','LineWidth',1.5)
 % hold on
 % errorbar(time,insul2_values,insul2_err,'DisplayName','Insulin Data for F2','LineWidth',1.5)
 errorbar(time,insul3_values,insul3_err,'DisplayName','Insulin Experimental Data','LineWidth',1.5)
 hold on
 
-% Plot insulin model
+% Plot insulin model (F1 and F2 are commented out)
 % plot(T, Y1(:,2),'DisplayName','Insulin Model for F1','LineWidth',3,'Color',[1,0.5,0,0.75]); % orange
 % plot(T, Y2(:,2),'DisplayName','Insulin Model for F2','LineWidth',3,'Color',[0, 0.7,0,0.75]); % green
 plot(T, Y3(:,2),'DisplayName','Insulin Model','LineWidth',3,'Color',[0,1,0,0.5]); % purple
@@ -86,7 +90,7 @@ ax = gca
 ax.XAxis.FontSize = 20;
 ax.YAxis.FontSize = 20;
 title('Insulin Model',FontSize=22,Interpreter='latex')
-% title('Insulin Model, $d$ = 0.0',FontSize=22,Interpreter='latex')
+% title('Insulin Model, $d$ = 0.0',FontSize=22,Interpreter='latex') % death rate of d = 0.0 (compare to testing_death_rate.m)
 xlabel('Time $t$ (min)',FontSize=22,Interpreter='latex')
 ylabel('Insulin concentration $I$ (mg per mL)',FontSize=22,Interpreter='latex') 
 legend('location','se',FontSize=18,Interpreter='latex')
